@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="survey_form.css" />
+
+    <title>Survey</title>
+  </head>
+  <body>
+    <h1 id="title">Tiki Cocktail Bar Survey</h1>
+    <p id="description">Cocktail experience</p>
+    <form id="survey-form">
+      <label id="name-label">Name:______________</label>
+      <label id="email-label">Email:______________</label><br />
+      <input type="text" name="name" id="name" placeholder="Name" required />
+      <input
+        type="email"
+        email="email"
+        id="email"
+        placeholder="Email"
+        required
+      /><br />
+      <br />
+      <label id="gender-radio">You are...</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br />
+      <br />
+      <label id="travel-checkbox">How did you get here?</label><br />
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br />
+      <input type="text" placeholder="other" /><br />
+      <br />
+      <label id="number-label">Rate your taste:</label>
+      <input type="number" "range" id="number" placeholder="Cocktail raiting"
+      min="0" max="10" required><br />
+      <br />
+      <label for="cocktails">Choose best cocktail:</label>
+
+      <select name="cocktails" id="dropdown">
+        <option value="zombie">Zombie</option>
+        <option value="maitai">Mai tai</option>
+        <option value="painkiller">Pain killer</option>
+        <option value="scorpion">Scorpion</option></select
+      ><br />
+      <br />
+      <label id="comments">Any comments?</label><br />
+      <textarea></textarea><br />
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
